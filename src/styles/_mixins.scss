@@ -1,0 +1,7 @@
+@mixin transitionColor {
+  transition: color .3s ease-in-out, background-color .3s ease-in-out, border-color .3s ease-in-out;
+}
+
+@mixin fontFamilyRoboto {
+  font-family: 'Roboto', sans-serif;
+}

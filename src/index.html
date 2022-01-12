@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link rel="shortcut icon" type="image/svg" href="./images/favicon.svg">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/choices.js/public/assets/styles/choices.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <script defer src="https://cdn.jsdelivr.net/npm/choices.js/public/assets/scripts/choices.min.js"></script>
+    <script defer src="./main.js"></script>
+  </head>
+  <body>
+    <main>
+      <section class="hero" id="hero">
+        <h1 class="visually-hidden">Тест</h1>
+        <div class="container">
+                <select class="select select-region">
+                  <option class="select-region__option" value="Тюменская">Тюменская</option>
+                  <option class="select-region__option" value="Курганская">Курганская</option>
+                  <option class="select-region__option" value="Омская">Омская</option>
+                  <option class="select-region__option" value="Томская">Томская</option>
+                </select>
+                <select class="select select-city">
+                </select>
+          <div class="hero__btn-container">
+                  <button class="btn btn btn--add">Добавить</button>
+                  <button class="btn btn btn--clean">Очистить</button>
+          </div>
+          <ul class="list hero__list"></ul>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

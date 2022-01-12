@@ -1,0 +1,14 @@
+include ../../mixins/mixins
+
+section.hero#hero
+  h1.visually-hidden Тест
+  .container
+    +select(['Тюменская', 'Курганская', 'Омская', 'Томская'])(class="select-region")
+    +select(class="select-city")
+    .hero__btn-container
+      +btn('Добавить')(class="btn btn--add")
+      +btn('Очистить')(class="btn btn--clean")
+    ul.list.hero__list
+
+
+

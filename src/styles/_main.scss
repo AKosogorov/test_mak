@@ -1,0 +1,89 @@
+@import '_fonts';
+@import '_variables';
+@import '_mixins';
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  @include fontFamilyRoboto;
+  font-size: 16px;
+  background-color: $colorWhite;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 0 50px;
+  max-width: 768px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0)
+}
+
+.btn {
+  border: 3px solid $colorOrangeCrayola;
+  padding: 13px 19px;
+  font-weight: 700;
+  color: $colorWhite;
+  outline: none;
+  @include transitionColor;
+
+  &--add {
+
+    background-color: $colorOrangeCrayola;
+
+    &:hover {
+      border-color: $colorPearlOrange;
+      background-color: $colorPearlOrange;
+    }
+
+    &:focus {
+      border-color: $colorTitian;
+      background-color: $colorPearlOrange;
+    }
+  }
+
+  &--clean {
+    background-color: transparent;
+    color: $colorOrangeCrayola;
+
+
+    &:hover {
+      color: $colorWhite;
+      background-color: $colorOrangeCrayola;
+    }
+
+    &:focus {
+      color: $colorWhite;
+      background-color: $colorPearlOrange;
+    }
+  }
+
+  &:active {
+    border-color: $colorTitian;
+    background-color: $colorTitian;
+  }
+}
+
+
